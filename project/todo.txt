@@ -1,0 +1,3 @@
+[] learn how to securely store passwords
+[] learn about form library
+[] dig into SQLAlchemy docs
