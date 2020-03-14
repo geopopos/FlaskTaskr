@@ -5,6 +5,7 @@
 
 # Database files
 *.db
+**/*.db
 
 
 # Byte-compiled / optimized / DLL files
