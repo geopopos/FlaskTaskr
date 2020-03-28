@@ -21,6 +21,7 @@ class AllTests(unittest.TestCase):
         app.config['SQlALCHEMY_DATABASE_URI'] = 'sqlite:///' + \
                 os.path.join(basedir, TEST_DB)
         self.app = app.test_client()
+        breakpoint()
         db.create_all()
 
     # executed after each test
@@ -45,6 +46,7 @@ class AllTests(unittest.TestCase):
 
     def create_user(self, name, email, password):
         new_user = User(name=name, email=email, password=password)
+        breakpoint()
         db.session.add(new_user)
         db.session.commit()
 
